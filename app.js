@@ -16,6 +16,10 @@ app.get('/node', (req, res)=>{
    res.send([explorer1,explorer2,explorer3])
 })
 
+app.get('/explorer/:eplorer', (req, res)=>{
+    console.log(req.params);
+    res.send(req.params)
+ })
 
 app.listen(port,()=>{
     console.log("server listo calisto¡");
