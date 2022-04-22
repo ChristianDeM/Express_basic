@@ -10,8 +10,10 @@ app.get('/launchx', (req, res)=>{
     res.send("hola ahora estas en launchx")
 })
 app.get('/node', (req, res)=>{
-   const explorer1 ={ id:1, name:"explorer"}
-   res.send(explorer1)
+   const explorer1 ={ id:1, name:"explorer1"}
+   const explorer2 ={ id:2, name:"explorer2"}
+   const explorer3 ={ id:3, name:"explorer3"}
+   res.send([explorer1,explorer2,explorer3])
 })
 
 
